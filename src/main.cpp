@@ -8,6 +8,6 @@ int main() {
     makeTree(wordTree, filename);
     int treeHeight = wordTree.getHeight();
     std::cout << (treeHeight == 35) << std::endl;
-    dumpFrequencies(wordTree);
+    printFreq(wordTree);
     return 0;
 }
