@@ -67,10 +67,12 @@ class BST {
     TreeNode* node = findRec(treeRoot, value);
     return node ? node->freq : 0;
   }
-  int depth() const {
+  int getHeight() const {
     return heightRec(treeRoot);
   }
-
+  int depth() const {
+    return getHeight();
+  }
   bool isEmpty() const {
     return treeRoot == nullptr;
   }
