@@ -6,7 +6,7 @@
 
 template <typename T>
 class BST {
-private:
+ private:
   struct TreeNode {
   T key;
   int freq;
@@ -53,7 +53,7 @@ private:
     container.push_back(node);
     gatherNodes(node->left, container);
   }
-public:
+ public:
   BST() : treeRoot(nullptr) {}
   ~BST() {
     deleteTree(treeRoot);
@@ -84,4 +84,8 @@ public:
     return nodes;
   }
 };
+
+void makeTree(BST<std::string>& tree, const char* filename);
+void printFreq(BST<std::string>& tree);
+
 #endif  // INCLUDE_BST_H_
