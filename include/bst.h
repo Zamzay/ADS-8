@@ -2,6 +2,7 @@
 #ifndef INCLUDE_BST_H_
 #define INCLUDE_BST_H_
 #include <vector>
+#include <string>
 #include <algorithm>
 
 template <typename T>
@@ -53,6 +54,7 @@ class BST {
     container.push_back(node);
     gatherNodes(node->left, container);
   }
+
  public:
   BST() : treeRoot(nullptr) {}
   ~BST() {
