@@ -13,7 +13,7 @@ class BST {
   int freq;
   TreeNode* left;
   TreeNode* right;
-  TreeNode(const T& k) : key(k), freq(1), left(nullptr), right(nullptr) {}
+  explicit TreeNode(const T& k) : key(k), freq(1), left(nullptr), right(nullptr) {}
   };
   TreeNode* treeRoot;
   TreeNode* insertRec(TreeNode* node, const T& value) {
