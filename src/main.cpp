@@ -1,6 +1,13 @@
 // Copyright 2021 NNTU-CS
 #include "bst.h"
+#include <iostream>
 
 int main() {
+    const char* filename = "war_peace.txt";
+    BST<std::string> wordTree;
+    makeTree(wordTree, filename);
+    int treeHeight = wordTree.getHeight();
+    std::cout << (treeHeight == 35) << std::endl;
+    dumpFrequencies(wordTree);
     return 0;
 }
