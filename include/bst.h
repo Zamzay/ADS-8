@@ -63,11 +63,11 @@ class BST {
   void add(const T& value) {
     treeRoot = insertRec(treeRoot, value);
   }
-  int getFrequency(const T& value) const {
+  int search(const T& value) const {
     TreeNode* node = findRec(treeRoot, value);
     return node ? node->freq : 0;
   }
-  int getHeight() const {
+  int depth() const {
     return heightRec(treeRoot);
   }
 
